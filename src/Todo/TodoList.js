@@ -37,10 +37,10 @@ class TodoList extends Component {
 	renderTodos() {
 		return this.state.items.map((item) => {
 			return (
-				<div key={item}>
+				<div className="list-group-item" key={item}>
 					{item} | <button onClick={this.deleteTodo.bind(this)}>X</button>
 				</div>
-				)
+			)
 
 		})
 	}
